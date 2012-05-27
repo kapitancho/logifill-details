@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	
+	<head>
+				<script type="text/javascript" src="logifill-details.js"></script>
+	</head>
+	<body>
+		<h1>Details/Summary example page</h1>
+		<details>
+			<summary>A section that is initially closed</summary>
+			<p>
+				Lorem ipsum dolor sit amet ...
+			</p>
+			<span>Some text here</span>
+		</details>
+		<details open>
+			<summary>A section that is initially open</summary>
+			<p>
+				Lorem ipsum dolor sit amet ...
+			</p>
+			<span>Some text here</span>
+		</details>
+		<details open="open">
+			<summary>Another section that is initially open</summary>
+			<p>
+				Lorem ipsum dolor sit amet ...
+			</p>
+			This text will always be visible. Unfortunately, this
+			polyfill doesn't handle direct text child nodes correctly.
+		</details>
+		<details>
+			<span>A text before the summary</span>
+			<summary>A summary that contains a <a href="#">LINK</a> and a <strong>BOLD TEXT</strong></summary>
+			<p>
+				Lorem ipsum dolor sit amet ...
+			</p>
+			<span>Some text here</span>
+		</details>
+		<p>A simple text</p>
+		<details>
+			<summary>Nested details</summary>
+			<p>Regular text</p>
+			<details>
+				<summary>Open child 1</summary>
+				<details>
+					<summary>Open subchild 1</summary>
+					<p>Subchild 1 content</p>
+				</details>
+				<details>
+					<summary>Open subchild 2</summary>
+					<p>Subchild 2 content</p>
+					<details>
+						<summary>In depth...</summary>
+						<span>In depth text</span>
+						<p>In depth paragraph</p>
+					</details>
+				</details>
+			</details>
+			<details>
+				<summary>Open child 2</summary>
+				<p>Child 2</p>
+			</details>
+		</details>
+		
+	</body>
+</html>

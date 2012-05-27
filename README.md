@@ -22,6 +22,11 @@ and reacts ONLY when the click happens on a summary element.
 
 Usage
 -----
-Include this anywhere in your HTML: 
+Include this anywhere in your HEAD section: 
 <script type="text/javascript" src="logifill-details.js"></script>
 It does not add anything to the JavaScript global scope. 
+
+Gotchas
+-------
+If details is used without a summary, there is no way to toggle the 
+section, even though webkit browsers show a default summary in that case.
