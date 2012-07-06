@@ -30,3 +30,5 @@ Gotchas
 -------
 If details is used without a summary, there is no way to toggle the 
 section, even though webkit browsers show a default summary in that case.
+Direct text children of the summary elements are not invisible.
+Wrapping these elements in a span or other element is a good idea.

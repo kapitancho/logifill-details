@@ -25,7 +25,7 @@
 	function init() {
 		
 		//Feature support check used here: 
-		//https://github.com/manuelbieh/Details-Polyfill/blob/master/details.polyfill.src.js
+		//http://mathiasbynens.be/notes/html5-details-jquery
 		var isDetailsSupported = (function(doc) {
 			var el = doc.createElement('details'), fake, root, diff;
 			if (!('open' in el)) {
